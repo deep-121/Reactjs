@@ -1,0 +1,85 @@
+React about best practices in react
+
+Reference : https://betterprogramming.pub/21-best-practices-for-a-clean-react-project-df788a682fb
+
+1. Use JSX ShortHand
+2. Use Ternary Operators : condition ? exprIfTrue : exprIfFalse
+3. Take Advantage of Object Literals
+4. Use Fragments : Always use Fragment over Div. It keeps the code clean and is also beneficial for performance because one less node is created in the virtual DOM.
+5. Don't Define a Function Inside Render
+6. Use Memo
+7. Put CSS in JavaScript
+8. Use Object Destructuring
+9. String Props Don’t Need Curly Braces : When passing string props to a children component.
+10. Remove JS Code From JSX : Move any JS code out of JSX if that doesn’t serve any purpose of rendering or UI functionality.
+11. Use Template Literals : Use template literals to build large strings. Avoid using string concatenation. It’s nice and clean.
+12. Import in Order  : (1)Built-in, (2)External, (3) Internal
+14. Component Naming : Always use PascalCase for components and camelCase for instances.
+15. Reserved Prop Naming : Don’t use DOM component prop names for passing props between components because others might not expect these names.
+16. Quotes : Use double quotes for JSX attributes and single quotes for all other JS.
+17. Prop Naming : Always use camelCase for prop names or PascalCase if the prop value is a React component.
+18. JSX in Parentheses : If your component spans more than one line, always wrap it in parentheses.
+19. Self-Closing Tags : If your component doesn’t have any children, then use self-closing tags. It improves readability.
+20. Underscore in Method Name : Do not use underscores in any internal React method.
+
+
+Learn React
+
+Reference  : https://www.w3schools.com/react/default.asp
+
+Setting up a React Environment
+    Create React App
+    npx create-react-app my-app
+    cd my-app
+    npm start
+
+React uses ES6, and you should be familiar with some of the new features like:
+
+    Classes : A class is a type of function, but instead of using the keyword function to initiate it, we use the keyword class, and the properties are assigned inside a constructor() method.
+    Arrow Functions : Arrow functions allow us to write shorter function syntax: hello = () => "Hello World!";
+    Variables (let, const, var) : there are three ways of defining your variables: var, let, and const.
+    Array Methods like .map()
+    Destructuring
+    Modules : ES Modules rely on the import and export statements.
+    Ternary Operator : Syntax: condition ? <expression if true> : <expression if false>
+    Spread Operator : The JavaScript spread operator (...) allows us to quickly copy all or part of an existing array or object into another array or object.
+
+React Props
+    Props are arguments passed into React components.
+    Props are passed to components via HTML attributes.
+    React Props are like function arguments in JavaScript and attributes in HTML.
+    Props are also how you pass data from one component to another, as parameters.
+
+React Events
+    React has the same events as HTML: click, change, mouseover etc.
+    React events are written in camelCase syntax:onClick instead of onclick.
+    React event handlers are written inside curly braces:onClick={shoot}  instead of onClick="shoot()".
+
+React Components
+    Components come in two types, Class components and Function components.
+    Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
+    Components are like functions that return HTML elements.
+
+React Conditional Rendering : if Statement ,Logical && Operator, Ternary Operator(condition ? true : false)
+
+React Lists : The JavaScript map() array method is generally the preferred method.
+
+Styling React Using CSS
+    There are many ways to style React with CSS, this tutorial will take a closer look at three common ways:
+    (1) Inline styling, (2)CSS stylesheets, (3)CSS Modules
+
+React Router: 
+    ReactRouter is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application. 
+    To add React Router in your application, run this in the terminal from the root directory of the application:
+    npm i -D react-router-dom
+
+React Memo
+    Using memo will cause React to skip rendering a component if its props have not changed.
+
+React Hooks
+    You must import Hooks from react.
+    Hooks will not work in React class components.
+    There are 3 rules for hooks:
+        Hooks can only be called inside React function components.
+        Hooks can only be called at the top level of a component.
+        Hooks cannot be conditional
