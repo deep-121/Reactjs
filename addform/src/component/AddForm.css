@@ -1,0 +1,68 @@
+.main{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+.title{
+    width: 90%;
+    text-align: left;
+    color: #607d8b;
+}
+.addform{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.field{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 0;
+}
+.field:nth-child(6){
+    align-items: flex-start;
+}
+
+label{
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+}
+.input{
+    width: 98%;
+    height: 40px;
+    margin: 10px 0 0 0;
+    padding: 5px 10px ;
+    font-size: 18px;
+    border: 1px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background: #607d8b36;
+}
+.radiobuttons{
+    padding-top: 10px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.submit{
+    width: 40%;
+    height: 60px;
+    padding: 10px 0;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-size: 30px;
+    color:white;
+    background-color: #607d8b;
+}
